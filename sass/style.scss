@@ -1,0 +1,171 @@
+@media (min-width:992px) { 
+    .filter{
+        height: auto;
+        top: 95%;
+        width: 80%;
+    } 
+}
+
+@media (max-width:993px) { 
+    #test{
+        display: none;
+    }
+    .figure{
+        width: 70% !important;
+    }
+    .iphone{
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.building{
+    .container-fluid{
+        .position-relative{
+            .position-absolute{            
+                height: auto;
+                top: 95%;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+.pictures{
+    .container-fluid{
+        .row{
+            .col-12{
+                .position-relative{
+                    width: 100%;
+                    height: auto;
+                    img{
+                        width: 100%;
+                        height: 255px;
+                    }
+                    .position-absolute{
+                        width: 100%;
+                        height: 255px;
+                        .text-uppercase{
+                            width: 100%;
+                            height: 200px;
+                        }
+                    }
+                    
+
+                }
+
+               
+            }
+        }
+    }
+}
+
+
+
+
+.partner{
+    .container-fluid{
+        .row{
+            .col-6{
+                .position-relative{
+                    width: 100%;
+                    .position-absolute{
+                        top: 0;
+                        width: 100%;
+                        visibility: hidden;
+                        transition-duration: 0.2s;
+                    }
+                    &:hover{
+                        .position-absolute{
+                            visibility: visible;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+
+}
+
+
+
+
+
+
+
+
+.agent{
+    .container-fluid{
+        .row{
+            .figure{
+                width: 40%;
+                height: 100%;
+                .w-100{
+                    background-color: silver;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+footer{
+
+    a{
+        &:hover{
+            text-decoration: none;
+            color: red !important;
+        }
+    }
+
+    background-color: #F5F4F8;
+    .container-fluid{
+        .row{
+
+            .col-12{
+                img{
+                    width: 116px;
+                    
+                }
+
+            }
+        }
+        .app{
+            height: 189px;
+            background-color: #1F1B2D;
+
+            .col-lg-3{
+                .position-relative{
+                    .position-absolute{
+                        top: -45px;
+                    }
+                }
+            }
+        }
+    }
+
+}
+

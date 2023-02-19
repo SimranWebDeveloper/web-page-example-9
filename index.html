@@ -1,0 +1,1019 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- bootstrap link -->
+    <link rel="stylesheet" href="bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css">
+    <!-- bootstrap icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <!-- sass link -->
+    <link rel="stylesheet" href="sass/style.css">
+  <!-- title icon -->
+    <link rel="icon" type="image/x-icon" href="img/images.png">
+
+
+    <style>
+        .dropdown:hover .dropdown-menu {
+        display: block;
+        margin-top: 0; /* remove the gap so it doesn't close */
+        }
+
+        .form-range{
+          background-color: #FF8000;
+        }
+
+    </style>
+</head>
+<body>
+
+
+
+    <!-- header Start -->
+
+    <header class="position-fixed z-3 top-0 w-100">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+
+
+                <h4 class="my-auto me-2"><i class=" btn bi bi-search  px-2 rounded-circle  btn-danger me-2"></i>Finder</h4>
+                
+
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0  ">
+                    <li class="nav-item dropdown px-3 border-end">
+                        <a class="nav-link dropdown-toggle fw-bolder text-muted" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Demos
+                        </a>
+                        <ul class="dropdown-menu lh-lg">
+                          <li><a class="dropdown-item" href="#"><i class="bi bi-building-fill pe-2"></i>Real Estate Demo</a></li>
+                          <li><a class="dropdown-item" href="#"><i class="bi bi-bus-front-fill pe-2"></i>Car Finder Demo</a></li>
+                          <li><a class="dropdown-item" href="#"><i class="bi bi-briefcase pe-2" ></i>Job Board Demo</a></li>
+                          <li><a class="dropdown-item" href="#"><i class="bi bi-building-fill pe-2"></i>Real Estate Demo</a></li>
+                          <li><a class="dropdown-item" href="#"><i class="bi bi-bus-front-fill pe-2"></i>Car Finder Demo</a></li>
+                          <li><a class="dropdown-item" href="#"><i class="bi bi-briefcase pe-2"></i>Job Board Demo</a></li>
+                        </ul>
+                      </li>
+
+                      <li class="nav-item dropdown px-3">
+                        <a class="nav-link dropdown-toggle fw-bolder text-muted" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Home
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Home v.1</a></li>
+                          <li><a class="dropdown-item" href="#">Home v.2</a></li>
+
+                        </ul>
+                      </li>
+
+                      <li class="nav-item dropdown px-3">
+                        <a class="nav-link dropdown-toggle fw-bolder text-muted" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Catalog
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Property for Rent</a></li>
+                            <li><a class="dropdown-item" href="#">Property for Sale</a></li>
+                            <li><a class="dropdown-item" href="#">Single Property v.1</a></li>
+                            <li><a class="dropdown-item" href="#">Single Property v.2</a></li>
+                        </ul>
+                      </li>
+
+                      <li class="nav-item dropdown px-3">
+                        <a class="nav-link dropdown-toggle fw-bolder text-muted" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Account
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Personal Info</a></li>
+                            <li><a class="dropdown-item" href="#">Password & Security</a></li>
+                            <li><a class="dropdown-item" href="#">My Properties</a></li>
+                            <li><a class="dropdown-item" href="#">Wishlist</a></li>
+                            <li><a class="dropdown-item" href="#">Rewiews</a></li>
+                            <li><a class="dropdown-item" href="#">Notifications</a></li>
+                            <li><a class="dropdown-item" href="#">Sign In</a></li>
+                            <li><a class="dropdown-item" href="#">Sign Up</a></li>
+                        </ul>
+                      </li>
+
+                      <li class="nav-item dropdown px-3">
+                        <a class="nav-link dropdown-toggle fw-bolder text-muted" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Vendor
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Add Property</a></li>
+                            <li><a class="dropdown-item" href="#">Property Promotion</a></li>
+                            <li><a class="dropdown-item" href="#">Vendor Page: Properties</a></li>
+                            <li><a class="dropdown-item" href="#">Vendor Page: Reviews</a></li>
+                        </ul>
+                      </li>
+
+                      <li class="nav-item dropdown ps-3">
+                        <a class="nav-link dropdown-toggle  fw-bolder text-muted" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Pages
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">About</a></li>
+                          <li><a class="dropdown-item" href="#">Blog</a></li>
+
+                          <li class="nav-item dropend px-3">
+                                <a class="nav-link dropdown-toggle fw-bolder text-muted" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Blog
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Blog Grid</a></li>
+                                    <li><a class="dropdown-item" href="#">Single Post</a></li>
+                                </ul>
+                          </li>
+
+                          <li><a class="dropdown-item" href="#">Contact</a></li>
+                          <li><a class="dropdown-item" href="#">Help Center</a></li>
+                          <li><a class="dropdown-item" href="#">404 Not Found</a></li>
+
+                        </ul>
+                      </li>
+
+
+                </ul>
+                <form class="d-flex" role="search">
+                    <a href="#" class="nav-link my-auto mx-4 text-danger"><i class="bi bi-person"></i>Sign in</a>
+                  <button class="btn btn-danger rounded-pill " type="submit"> <i class="bi bi-plus-lg"></i> Add property</button>
+                  
+                </form>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+
+
+
+
+
+    <!-- header End -->
+
+
+
+
+
+    <!-- building Start -->
+
+    <section class="building my-5">
+      <div class="container-fluid">
+
+        <div class="row position-relative" >
+        
+          
+          <div class="col-12 col-sm-12 col-md-12 col-lg-6  my-auto">
+            <h3 class="display-4 fw-bold">Easy way to find
+              a perfect property</h3>
+              <p class="text-muted fs-4">We provide a complete service for the sale, purchase or rental of real estate. We have been operating more than 10 years. Search millions of apartments and houses on Finder.</p>
+          </div>
+
+          <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+            <img src="https://themes.themesbrand.com/finder/angular/real-estate/assets/img/real-estate/hero-image.jpg" alt="" class="img-fluid z-0 ">
+          </div>
+          <div class="row border border-2 rounded bg-white border-dark-subtle position-absolute filter  ">
+            <div class="col-4 col-sm-4 col-md-3 col-lg-3 border-end">
+              <div class="dropdown">
+                <button class="btn  dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="bi bi-house"></i> For rent
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">For rent</a></li>
+                  <li><a class="dropdown-item" href="#">For sale</a></li>
+                </ul>
+              </div>
+
+              
+            </div>
+
+            <div class="col-4 col-sm-4 col-md-3 col-lg-3 border-end">
+              <div class="dropdown">
+                <button class="btn  dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="bi bi-geo-alt"></i> Location
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">For rent</a></li>
+                  <li><a class="dropdown-item" href="#">For sale</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-4 col-sm-4 col-md-3 col-lg-3 border-end">
+              <div class="dropdown">
+                <button class="btn  dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="bi bi-hdd-stack"></i> Property type
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Houses</a></li>
+                  <li><a class="dropdown-item" href="#">Apartments</a></li>
+                  <li><a class="dropdown-item" href="#">Commercial</a></li>
+                  <li><a class="dropdown-item" href="#">Daily rental</a></li>
+                  <li><a class="dropdown-item" href="#">New buildings</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-12 col-sm-12 col-md-3 col-lg-3 ">
+              <div class="d-flex justify-content-between text-center  py-2">
+                <i class="bi bi-cash-coin pe-2"></i>
+                <p>Price</p>
+                <input type="range" class="form-range"  id="customRange2">
+
+                <button class="btn btn-danger" type="submit"><i class="bi bi-search"></i></button>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+ 
+
+      </div>
+    </section>
+
+
+    <!-- building End -->
+
+
+
+
+
+
+
+
+    <!-- logo Start -->
+
+    <section class="logo my-5 py-5">
+      <div class="container">
+
+        <!-- Hourses -->
+        <div class="row g-5">
+
+          <div class="col-6 col-sm-4 col-md-4 col-lg-2  text-center ">
+          <div class="border py-4 ">
+            <a href="" class=" btn btn-outline-danger  rounded-pill"><i class="bi bi-house-fill"></i></a>
+            <h5>Hourses</h5>
+          </div>
+          </div>
+
+          <div class="col-6 col-sm-4 col-md-4 col-lg-2  text-center ">
+            <div class="border py-4">
+              <a href="" class=" btn btn-outline-danger  rounded-pill"><i class="bi bi-house-fill"></i></a>
+              <h5>Hourses</h5>
+            </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-4 col-lg-2  text-center ">
+              <div class="border py-4">
+                <a href="" class=" btn btn-outline-danger  rounded-pill"><i class="bi bi-house-fill"></i></a>
+                <h5>Hourses</h5>
+              </div>
+              </div>
+
+              <div class="col-6 col-sm-4 col-md-4 col-lg-2  text-center ">
+                <div class="border py-4">
+                  <a href="" class=" btn btn-outline-danger  rounded-pill"><i class="bi bi-house-fill"></i></a>
+                  <h5>Hourses</h5>
+                </div>
+                </div>
+
+                <div class="col-6 col-sm-4 col-md-4 col-lg-2  text-center ">
+                  <div class="border py-4">
+                    <a href="" class=" btn btn-outline-danger  rounded-pill"><i class="bi bi-house-fill"></i></a>
+                    <h5>Hourses</h5>
+                  </div>
+                  </div>
+
+                  <div class="col-6 col-sm-4 col-md-4 col-lg-2  text-center ">
+                    <div class="border py-4">
+                      <a href="" class=" btn btn-outline-danger  rounded-pill"><i class="bi bi-house-fill"></i></a>
+                      <h5>Hourses</h5>
+                    </div>
+                    </div>
+         
+
+        </div>
+       
+        
+
+        <!-- Home -->
+        <div class="row  d-flex justify-content-around  my-5">
+          <div class="col-7 col-sm-8 col-md-5 col-lg-3 ">
+
+            <div class="text-center ">
+              <img src="https://themes.themesbrand.com/finder/angular/real-estate/assets/img/real-estate/illustrations/buy.svg" alt="" class="img-fluid">
+              <h3>Buy a property</h3>
+              <p class="text-muted">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla ratione necessitatibus at velit culpa voluptates fugiat et aperiam inventore beatae.</p>
+              <button class="btn btn-outline-danger" type="submit">Find a home</button>
+            </div>
+            
+          </div>
+          <div class="col-7 col-sm-8 col-md-5 col-lg-3 ">
+
+            <div class="text-center">
+              <img src="https://themes.themesbrand.com/finder/angular/real-estate/assets/img/real-estate/illustrations/sell.svg" alt="" class="img-fluid">
+              <h3>Sell a property</h3>
+              <p class="text-muted">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla ratione necessitatibus at velit culpa voluptates fugiat et aperiam inventore beatae.</p>
+              <button class="btn btn-outline-danger" type="submit">Place an ad</button>
+            </div>
+          </div>
+          <div class="col-7 col-sm-8 col-md-5 col-lg-3 ">
+
+            <div class="text-center  ">
+              <img src="https://themes.themesbrand.com/finder/angular/real-estate/assets/img/real-estate/illustrations/rent.svg" alt="" class="img-fluid">
+              <h3>Rent a property</h3>
+              <p class="text-muted">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla ratione necessitatibus at velit culpa voluptates fugiat et aperiam inventore beatae.</p>
+              <button class="btn btn-outline-danger" type="submit">Find a rental</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bed -->
+
+        <div class="row d-flex justify-content-between ">
+          
+          <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+            <div class="card text-muted position-relative" >
+              <img src="https://themes.themesbrand.com/finder/angular/real-estate/assets/img/real-estate/catalog/01.jpg" class="card-img-top " alt="...">
+
+              <div class="bg-image-main position-absolute w-100  ">
+
+
+                <div class="constant    z-3 pt-3 d-flex justify-content-between px-2">
+                  <div >
+                    
+                    <span class="bg-success text-white rounded px-2 ">Verified</span>
+                    <br>
+                    <span class="bg-info text-white rounded px-2">new</span>
+                  </div>
+                  
+                  <span><i class="bi bi-heart bg-white  text-warning p-2 rounded-pill "></i></span>
+   
+
+                  
+                </div>
+
+
+              </div>
+              
+              <div class="card-body text-muted">
+                <span class="text-danger">For Rent</span>
+                <h5 class="card-title">3 Bed Apartment | 67s sq.b</h5>
+                <p class="card-text">Some quick example text to sdfgh </p>
+                <p class="fw-semibold"><i class="bi bi-cash-coin"></i> $ 1.629</p>
+              </div>
+              <div class="card-footer text-center">
+                <a href="#" class="card-link text-decoration-none text-muted">3 <i class="bi bi-segmented-nav"></i></a>
+                <a href="#" class="card-link text-decoration-none text-muted">2 <i class="bi bi-archive-fill"></i></a>
+                <a href="#" class="card-link text-decoration-none text-muted">2 <i class="bi bi-truck-front"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+  <div class="card text-muted position-relative" >
+    <img src="https://themes.themesbrand.com/finder/angular/real-estate/assets/img/real-estate/catalog/02.jpg"  class="card-img-top " alt="...">
+
+    <div class="bg-image-main position-absolute w-100  ">
+
+
+      <div class="constant    z-3 pt-3 d-flex justify-content-between px-2">
+        <div >
+          
+          <span class="bg-success text-white rounded px-2 ">Verified</span>
+          <br>
+          <span class="bg-info text-white rounded px-2">new</span>
+        </div>
+        
+        <span><i class="bi bi-heart bg-white  text-warning p-2 rounded-pill "></i></span>
+
+
+        
+      </div>
+
+
+    </div>
+    
+    <div class="card-body text-muted">
+      <span class="text-danger">For Rent</span>
+      <h5 class="card-title">3 Bed Apartment | 67s sq.b</h5>
+      <p class="card-text">Some quick example text to sdfgh </p>
+      <p class="fw-semibold"><i class="bi bi-cash-coin"></i> $ 1.629</p>
+    </div>
+    <div class="card-footer text-center">
+      <a href="#" class="card-link text-decoration-none text-muted">3 <i class="bi bi-segmented-nav"></i></a>
+      <a href="#" class="card-link text-decoration-none text-muted">2 <i class="bi bi-archive-fill"></i></a>
+      <a href="#" class="card-link text-decoration-none text-muted">2 <i class="bi bi-truck-front"></i></a>
+    </div>
+  </div>
+          </div>
+          <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+            <div class="card text-muted position-relative" >
+              <img src="https://themes.themesbrand.com/finder/angular/real-estate/assets/img/real-estate/catalog/01.jpg" class="card-img-top " alt="...">
+
+              <div class="bg-image-main position-absolute w-100  ">
+
+
+                <div class="constant    z-3 pt-3 d-flex justify-content-between px-2">
+                  <div >
+                    
+                    <span class="bg-success text-white rounded px-2 ">Verified</span>
+                    <br>
+                    <span class="bg-info text-white rounded px-2">new</span>
+                  </div>
+                  
+                  <span><i class="bi bi-heart bg-white  text-warning p-2 rounded-pill "></i></span>
+   
+
+                  
+                </div>
+
+
+              </div>
+              
+              <div class="card-body text-muted">
+                <span class="text-danger">For Rent</span>
+                <h5 class="card-title">3 Bed Apartment | 67s sq.b</h5>
+                <p class="card-text">Some quick example text to sdfgh </p>
+                <p class="fw-semibold"><i class="bi bi-cash-coin"></i> $ 1.629</p>
+              </div>
+              <div class="card-footer text-center">
+                <a href="#" class="card-link text-decoration-none text-muted">3 <i class="bi bi-segmented-nav"></i></a>
+                <a href="#" class="card-link text-decoration-none text-muted">2 <i class="bi bi-archive-fill"></i></a>
+                <a href="#" class="card-link text-decoration-none text-muted">2 <i class="bi bi-truck-front"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+  <div class="card text-muted position-relative" >
+    <img src="https://themes.themesbrand.com/finder/angular/real-estate/assets/img/real-estate/catalog/02.jpg"  class="card-img-top " alt="...">
+
+    <div class="bg-image-main position-absolute w-100  ">
+
+
+      <div class="constant    z-3 pt-3 d-flex justify-content-between px-2">
+        <div >
+          
+          <span class="bg-success text-white rounded px-2 ">Verified</span>
+          <br>
+          <span class="bg-info text-white rounded px-2">new</span>
+        </div>
+        
+        <span><i class="bi bi-heart bg-white  text-warning p-2 rounded-pill "></i></span>
+
+
+        
+      </div>
+
+
+    </div>
+    
+    <div class="card-body text-muted">
+      <span class="text-danger">For Rent</span>
+      <h5 class="card-title">3 Bed Apartment | 67s sq.b</h5>
+      <p class="card-text">Some quick example text to sdfgh </p>
+      <p class="fw-semibold"><i class="bi bi-cash-coin"></i> $ 1.629</p>
+    </div>
+    <div class="card-footer text-center">
+      <a href="#" class="card-link text-decoration-none text-muted">3 <i class="bi bi-segmented-nav"></i></a>
+      <a href="#" class="card-link text-decoration-none text-muted">2 <i class="bi bi-archive-fill"></i></a>
+      <a href="#" class="card-link text-decoration-none text-muted">2 <i class="bi bi-truck-front"></i></a>
+    </div>
+  </div>
+          </div>
+
+
+
+
+
+
+        </div>
+
+        <!--  -->
+      </div>
+    </section>
+
+
+
+
+    <!-- logo End -->
+
+
+
+
+
+    <!-- pictures Start -->
+
+    <section class="pictures">
+      <div class="container-fluid">
+        <div class="row my-4">
+          <div class="col-12 col-sm-12 col-md-6 col-lg-6  ">
+              <div class="position-relative ">
+                <img src="https://themes.themesbrand.com/finder/angular/real-estate/assets/img/real-estate/recent/03.jpg" alt="" class=" image-fluid rounded opacity" >
+                <div class="position-absolute top-0  p-3 bg-black opacity-75 rounded ">
+                  <span class="text-white bg-success py-1 px-2 rounded">Verified</span>
+
+                  <span class="text-white bg-info py-1 px-2 rounded">new</span>
+
+
+                    <div class="text-white text-uppercase d-flex justify-content-between align-items-end">
+                      <div>
+                        <p>For Rental</p>
+                        <h5>Luxxry Rental Villa</h5>
+                        <small class="text-secondary fw-semibold"><i class="bi bi-geo-alt"></i>118-11 Sutphin Blvd Jamaica, NY 11434</small>
+                      </div>
+
+                      <div class="btn-group" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn-danger">From $3,850</button>
+                        <button type="button" class="btn btn-danger"><i class="bi bi-balloon-heart"></i></button>
+                      </div>
+                    </div>
+                </div>
+              </div>
+          </div>
+
+          <div class="col-12 col-sm-12 col-md-6 col-lg-6  ">
+            <div class="position-relative ">
+              <img src="https://themes.themesbrand.com/finder/angular/real-estate/assets/img/real-estate/recent/02.jpg" alt="" class=" image-fluid rounded opacity" >
+              <div class="position-absolute top-0  p-3 bg-black opacity-75 rounded ">
+
+                <span class="text-white bg-info py-1 px-2 rounded">new</span>
+
+
+                  <div class="text-white text-uppercase d-flex justify-content-between align-items-end">
+                    <div>
+                      <p>For Rental</p>
+                      <h5>Luxxry Rental Villa</h5>
+                      <small class="text-secondary fw-semibold"><i class="bi bi-geo-alt"></i>118-11 Sutphin Blvd Jamaica, NY 11434</small>
+                    </div>
+
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                      <button type="button" class="btn btn-danger">From $3,850</button>
+                      <button type="button" class="btn btn-danger"><i class="bi bi-balloon-heart"></i></button>
+                    </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+
+        </div>
+
+        <div class="row my-4">
+          <div class="col-12 col-sm-12 col-md-6 col-lg-6  ">
+              <div class="position-relative ">
+                <img src="https://themes.themesbrand.com/finder/angular/real-estate/assets/img/real-estate/recent/03.jpg" alt="" class=" image-fluid rounded opacity" >
+                <div class="position-absolute top-0  p-3 bg-black opacity-75 rounded ">
+
+                  <span class="text-white bg-info py-1 px-2 rounded">new</span>
+
+
+                    <div class="text-white text-uppercase d-flex justify-content-between align-items-end">
+                      <div>
+                        <p>For Rental</p>
+                        <h5>Luxxry Rental Villa</h5>
+                        <small class="text-secondary fw-semibold"><i class="bi bi-geo-alt"></i>118-11 Sutphin Blvd Jamaica, NY 11434</small>
+                      </div>
+
+                      <div class="btn-group" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn-danger">From $3,850</button>
+                        <button type="button" class="btn btn-danger"><i class="bi bi-balloon-heart"></i></button>
+                      </div>
+                    </div>
+                </div>
+              </div>
+          </div>
+
+          <div class="col-12 col-sm-12 col-md-6 col-lg-6  ">
+            <div class="position-relative ">
+              <img src="https://themes.themesbrand.com/finder/angular/real-estate/assets/img/real-estate/recent/02.jpg" alt="" class=" image-fluid rounded opacity" >
+              <div class="position-absolute top-0  p-3 bg-black opacity-75 rounded ">
+
+                <span class="text-white bg-success py-1 px-2 rounded">Verified</span>
+                <span class="text-white bg-info py-1 px-2 rounded">new</span>
+
+                  <div class="text-white text-uppercase d-flex justify-content-between align-items-end">
+                    <div>
+                      <p>For Rental</p>
+                      <h5>Luxxry Rental Villa</h5>
+                      <small class="text-secondary fw-semibold"><i class="bi bi-geo-alt"></i>118-11 Sutphin Blvd Jamaica, NY 11434</small>
+                    </div>
+
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                      <button type="button" class="btn btn-danger">From $3,850</button>
+                      <button type="button" class="btn btn-danger"><i class="bi bi-balloon-heart"></i></button>
+                    </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+
+        </div>
+
+        <div class="row my-4">
+          <div class="col-12 col-sm-12 col-md-6 col-lg-6  ">
+              <div class="position-relative ">
+                <img src="https://themes.themesbrand.com/finder/angular/real-estate/assets/img/real-estate/recent/03.jpg" alt="" class=" image-fluid rounded opacity" >
+                <div class="position-absolute top-0  p-3 bg-black opacity-75 rounded ">
+
+                  <span class="text-white bg-info py-1 px-2 rounded">new</span>
+
+
+                    <div class="text-white text-uppercase d-flex justify-content-between align-items-end">
+                      <div>
+                        <p>For Rental</p>
+                        <h5>Luxxry Rental Villa</h5>
+                        <small class="text-secondary fw-semibold"><i class="bi bi-geo-alt"></i>118-11 Sutphin Blvd Jamaica, NY 11434</small>
+                      </div>
+
+                      <div class="btn-group" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn-danger">From $3,850</button>
+                        <button type="button" class="btn btn-danger"><i class="bi bi-balloon-heart"></i></button>
+                      </div>
+                    </div>
+                </div>
+              </div>
+          </div>
+
+          <div class="col-12 col-sm-12 col-md-6 col-lg-6  ">
+            <div class="position-relative ">
+              <img src="https://themes.themesbrand.com/finder/angular/real-estate/assets/img/real-estate/recent/02.jpg" alt="" class=" image-fluid rounded opacity" >
+              <div class="position-absolute top-0  p-3 bg-black opacity-75 rounded ">
+
+                <span class="text-white bg-info py-1 px-2 rounded">new</span>
+
+
+                  <div class="text-white text-uppercase d-flex justify-content-between align-items-end">
+                    <div>
+                      <p>For Rental</p>
+                      <h5>Luxxry Rental Villa</h5>
+                      <small class="text-secondary fw-semibold"><i class="bi bi-geo-alt"></i>118-11 Sutphin Blvd Jamaica, NY 11434</small>
+                    </div>
+
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                      <button type="button" class="btn btn-danger">From $3,850</button>
+                      <button type="button" class="btn btn-danger"><i class="bi bi-balloon-heart"></i></button>
+                    </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- pistures End -->
+
+
+
+
+
+    <!-- calculate Start -->
+
+    <section class="calculate">
+      <div class="container-fluid">
+        <div class="row ">
+          <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+            <img src="https://themes.themesbrand.com/finder/angular/real-estate/assets/img/real-estate/illustrations/calculator.svg" class="image-fluid">
+          </div>
+          <div class="col-12 col-sm-12 col-md-6 col-lg-6 d-flex align-items-center">
+            <div class="lh-lg" >
+              <h3 class="fw-bold">Сalculate the cost of your property</h3>
+              <p class="text-muted">Real estate appraisal is a procedure that allows you to determine the average market value of real estate (apartment, house, land, etc.). Сalculate the cost of your property with our new Calculation Service.</p>
+              <button type="button " class="btn btn-danger p-3 px-5 rounded"><i class="bi bi-calendar3 pe-3 "></i>Carculate</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+
+
+    <!-- calculate End -->
+
+
+
+
+
+
+    <!-- partner Start -->
+
+    <section class="partner">
+      <div class="container-fluid my-5">
+        <h3>Our partners</h3>
+        <div class="row ">
+          <div class="col-6 col-sm-6 col-md-4 col-lg-2 ">
+            <div class="position-relative">
+              <img src="https://themes.themesbrand.com/finder/angular/real-estate/assets/img/job-board/company/microsoft-g.svg" alt="" class="image-fluid ">
+              <div class="position-absolute">
+                <img src="https://themes.themesbrand.com/finder/angular/real-estate/assets/img/job-board/company/microsoft.svg" alt="" class="image-fluid ">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-sm-6 col-md-4 col-lg-2 ">
+            <div class="position-relative">
+              <img src="https://themes.themesbrand.com/finder/angular/real-estate/assets/img/job-board/company/indeed-g.svg" alt="" class="image-fluid ">
+              <div class="position-absolute">
+                <img src="https://themes.themesbrand.com/finder/angular/real-estate/assets/img/job-board/company/indeed.svg" alt="" class="image-fluid ">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-sm-6 col-md-4 col-lg-2 ">
+            <div class="position-relative">
+              <img src="https://themes.themesbrand.com/finder/angular/real-estate/assets/img/job-board/company/cocacola-g.svg" alt="" class="image-fluid ">
+              <div class="position-absolute">
+                <img src="https://themes.themesbrand.com/finder/angular/real-estate/assets/img/job-board/company/cocacola.svg" alt="" class="image-fluid ">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-sm-6 col-md-4 col-lg-2 ">
+            <div class="position-relative">
+              <img src="https://themes.themesbrand.com/finder/angular/real-estate/assets/img/job-board/company/slack-g.svg" alt="" class="image-fluid ">
+              <div class="position-absolute">
+                <img src="https://themes.themesbrand.com/finder/angular/real-estate/assets/img/job-board/company/slack.svg" alt="" class="image-fluid ">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-sm-6 col-md-4 col-lg-2 ">
+            <div class="position-relative">
+              <img src="https://themes.themesbrand.com/finder/angular/real-estate/assets/img/job-board/company/walmart-g.svg" alt="" class="image-fluid ">
+              <div class="position-absolute">
+                <img src="https://themes.themesbrand.com/finder/angular/real-estate/assets/img/job-board/company/walmart.svg" alt="" class="image-fluid ">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-sm-6 col-md-4 col-lg-2 ">
+            <div class="position-relative">
+              <img src="https://themes.themesbrand.com/finder/angular/real-estate/assets/img/job-board/company/google-g.svg" alt="" class="image-fluid ">
+              <div class="position-absolute">
+                <img src="https://themes.themesbrand.com/finder/angular/real-estate/assets/img/job-board/company/google.svg" alt="" class="image-fluid ">
+              </div>
+            </div>
+          </div>
+
+
+
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- partner End -->
+
+
+
+
+
+    <!-- agent Start -->
+
+    <section class="agent">
+      <div class="container-fluid">
+        <div class="row position-relative ">
+          <div id="test" class="col-4 col-sm-4 col-md-4 col-lg-4">
+            
+              <img src="https://themes.themesbrand.com/finder/angular/real-estate/assets/img/real-estate/agents/01.jpg" alt="" class="img-fluid rounded">
+            
+          </div>
+          <div class="col-4 col-sm-4 col-md-4 col-lg-4">
+            
+            <img src="https://themes.themesbrand.com/finder/angular/real-estate/assets/img/real-estate/agents/02.jpg" alt="" class="img-fluid rounded">
+
+        </div>
+
+            <div class="figure position-absolute end-0  d-flex align-items-center" >
+              <div class="w-100  border rounded p-2">
+                <h3>Lorem ipsum dolor sit amet.</h3>
+                <p class="text-muted">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum iure esse asperiores. Consectetur qui ipsum sed incidunt dicta provident odit.</p>
+              </div>
+
+            </div>
+
+
+          
+
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- agent End -->
+
+
+   
+
+
+
+
+    <!-- Footer start -->
+    <footer class="py-5">
+      <div class="container-fluid">
+        <div class="row  justify-content-between ">
+          <div class="col-12 col-sm-3  col-md-3 col-lg-2 ">
+            <img src="https://themes.themesbrand.com/finder/angular/real-estate/assets/img/logo/logo-dark.svg" class="mb-4">
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><i class="bi bi-envelope pe-2"></i>example@email.com</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><i class="bi bi-phone pe-2"></i>(406) 555-0120</a></li>
+            </ul>
+
+            <ul class="list-unstyled d-flex">
+              <li><a href="" class="btn btn-outline-danger  border-0 text-muted rounded-circle  " ><i class="bi bi-facebook  "></i></a></li>
+              <li><a href="" class="btn btn-outline-danger  border-0 text-muted rounded-circle  " ><i class="bi bi-twitter  "></i></a></li>
+              <li><a href="" class="btn btn-outline-danger  border-0 text-muted rounded-circle  " ><i class="bi bi-whatsapp  "></i></a></li>
+              <li><a href="" class="btn btn-outline-danger  border-0 text-muted rounded-circle  " ><i class="bi bi-telegram  "></i></a></li>
+            </ul>
+
+          </div>
+    
+          <div class="col-12 col-sm-3  col-md-3 col-lg-2">
+            <h4>Quick Links</h4>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted  ">Home</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+            </ul>
+          </div>
+    
+          <div class="col-12 col-sm-3  col-md-3 col-lg-2">
+            <h4>About</h4>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+            </ul>
+          </div>
+    
+          <div class=" col-12 col-sm-12 col-md-12 col-lg-6 ">
+    
+              <h4>Recent Posts</h4>
+              <div class=" d-flex justify-content-between">
+                <div class="img me-4">
+                  <img src="https://themes.themesbrand.com/finder/angular/real-estate/assets/img/real-estate/blog/th01.jpg" alt="" class="img-fluid rounded">
+                </div>
+                <div class="text">
+                  <small class="text-uppercase text-danger  mb-0">HOME IMPROVEMENT</small>
+                  <br>
+                  <a href="" class="text-decoration-none  fw-semibold text-muted">Your Guide to a Smart Apartment Searching</a>
+                  <p class="text-muted ">Mi justo, varius vitae cursus ipsum sem massa amet pellentesque. Ipsum enim sit nulla ridiculus semper nam...</p>
+                  
+                  <ul class="nav ">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><i class="bi bi-calendar2-event pe-2"></i>Dec 4</a></li>
+                    <li class="nav-item mb-2 ms-4"><a href="#" class="nav-link  p-0 text-muted"><i class="bi bi-chat pe-2"></i>2 comment</a></li>
+                  </ul>
+
+                </div>
+
+              </div>
+
+              <!-- ----2------- -->
+              <div class=" d-flex justify-content-between">
+                <div class="img me-4">
+                  <img src="https://themes.themesbrand.com/finder/angular/real-estate/assets/img/real-estate/blog/th02.jpg" alt="" class="img-fluid rounded">
+                </div>
+                <div class="text">
+                  <small class="text-uppercase text-danger  ">TIPS & ADVICE</small>
+                  <br>
+                  <a href="" class="text-decoration-none  fw-semibold text-muted">Your Guide to a Smart Apartment Searching</a>
+                  <p class="text-muted ">Volutpat, orci, vitae arcu feugiat vestibulum ultricies nisi, aenean eget. Vitae enim, tellus tempor consequat mi vitae...</p>
+                  
+                  <ul class="nav ">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><i class="bi bi-calendar2-event pe-2"></i>Nov 23</a></li>
+                    <li class="nav-item mb-2 ms-4"><a href="#" class="nav-link  p-0 text-muted"><i class="bi bi-chat pe-2"></i>No comments</a></li>
+                  </ul>
+
+                </div>
+
+              </div>
+
+
+    
+            
+          </div>
+        </div>
+
+
+
+
+
+
+        <div class="row  app z-1 " >
+          
+            <div  class="iphone  col-sm-6 col-md-5 col-lg-3 " >
+              <div class="position-relative">
+                <div class="position-absolute   w-75 ">
+                  <img src="https://themes.themesbrand.com/finder/angular/real-estate/assets/img/real-estate/illustrations/mobile.svg" alt="" class=" ">
+                </div>
+              </div>
+
+
+              
+            </div>
+  
+            <div class="  col-12 col-sm-12 col-md-6 col-lg-5 fw-semibold text-white  d-flex align-items-center">
+              <div >
+                <h3>Download Our App</h3>
+                <p>Find everything you need for buying, selling & renting property in our new Finder App!</p>
+              </div>
+              </div>
+
+  
+            <div class=" col-12 col-sm-12 col-md-6 col-lg-4  d-flex align-items-center justify-content-center">
+
+                  <div class="rounded">
+                    <button class="btn btn-secondary disabled px-3 py-1 me-3" type="submit">
+                      <div class="d-flex">
+                        <div>
+                          <i class="bi bi-apple fs-2"></i>
+                        </div>
+                        <div >
+                          <p  class="fs-6 mb-0">Avilable on the</p>
+                          <h5>App Store</h5>
+                        </div>
+                      </div>
+
+                    </button>
+                    <button class="btn btn-secondary disabled px-3 py-1 ms-3" type="submit">
+                      <div class="d-flex">
+                        <div>
+                          <i class="bi bi-google-play fs-2"></i>
+                        </div>
+                        <div >
+                          <p  class="fs-6 mb-0">Get it on</p>
+                          <h5>Google play</h5>
+                        </div>
+                      </div>
+                    </button>
+                  </div>
+
+                </div>
+
+
+            </div>
+
+
+
+
+
+
+
+
+        <!-- Menasi nedi ? -->
+
+
+        <div class="d-flex flex-column flex-sm-row justify-content-center py-4 my-4 border-top">
+          <p>© 2022 Company, Inc. All rights reserved.</p>
+          <ul class="list-unstyled d-flex">
+
+            
+            <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
+            <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+            <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li> 
+          </ul>
+        </div>
+
+      </div>
+
+ 
+  
+
+    </footer>
+
+
+
+
+
+
+
+
+
+
+    <!-- Footer end -->
+
+
+
+ 
+
+
+    <script src="bootstrap-5.3.0-alpha1-dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>

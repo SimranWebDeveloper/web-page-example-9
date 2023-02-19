@@ -1,0 +1,78 @@
+@media (min-width: 992px) {
+  .filter {
+    height: auto;
+    top: 95%;
+    width: 80%;
+  }
+}
+@media (max-width: 993px) {
+  #test {
+    display: none;
+  }
+  .figure {
+    width: 70% !important;
+  }
+  .iphone {
+    display: none;
+  }
+}
+.building .container-fluid .position-relative .position-absolute {
+  height: auto;
+  top: 95%;
+}
+
+.pictures .container-fluid .row .col-12 .position-relative {
+  width: 100%;
+  height: auto;
+}
+.pictures .container-fluid .row .col-12 .position-relative img {
+  width: 100%;
+  height: 255px;
+}
+.pictures .container-fluid .row .col-12 .position-relative .position-absolute {
+  width: 100%;
+  height: 255px;
+}
+.pictures .container-fluid .row .col-12 .position-relative .position-absolute .text-uppercase {
+  width: 100%;
+  height: 200px;
+}
+
+.partner .container-fluid .row .col-6 .position-relative {
+  width: 100%;
+}
+.partner .container-fluid .row .col-6 .position-relative .position-absolute {
+  top: 0;
+  width: 100%;
+  visibility: hidden;
+  transition-duration: 0.2s;
+}
+.partner .container-fluid .row .col-6 .position-relative:hover .position-absolute {
+  visibility: visible;
+}
+
+.agent .container-fluid .row .figure {
+  width: 40%;
+  height: 100%;
+}
+.agent .container-fluid .row .figure .w-100 {
+  background-color: silver;
+}
+
+footer {
+  background-color: #F5F4F8;
+}
+footer a:hover {
+  text-decoration: none;
+  color: red !important;
+}
+footer .container-fluid .row .col-12 img {
+  width: 116px;
+}
+footer .container-fluid .app {
+  height: 189px;
+  background-color: #1F1B2D;
+}
+footer .container-fluid .app .col-lg-3 .position-relative .position-absolute {
+  top: -45px;
+}/*# sourceMappingURL=style.css.map */
